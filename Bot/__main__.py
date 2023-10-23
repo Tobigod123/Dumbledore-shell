@@ -1,3 +1,3 @@
-from . import main
+from Bot import main
 
 main.main()
