@@ -63,7 +63,7 @@ bot = Bot(token='BOT_TOKEN') # Replace 'YOUR_BOT_TOKEN' with your actual Telegra
 bot.request.read_timeout = 20
 bot.request.connect_timeout = 15
 
-updater = tgUpdater(bot=bot, request_kwards=defaults)
+updater = tgUpdater(bot=bot, request_kwargs=defaults)
 
 bot = updater.bot
 
