@@ -56,7 +56,8 @@ except:
 
     exit(1)
 
-updater = tgUpdater(token=BOT_TOKEN, request_kwargs={'read_timeout': 20, 'connect_timeout': 15})
+bot = Bot(token=6498059135:AAH1mMqrtwL5cX-djJqQ9BkNkiN-bcmUFdE)
+updater = tgUpdater(bot=bot, request_kwargs={'read_timeout': 20, 'connect_timeout': 15})
 
 bot = updater.bot
 
