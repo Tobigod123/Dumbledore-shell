@@ -4,6 +4,8 @@ from logging import getLogger, FileHandler, StreamHandler, INFO, basicConfig
 
 from dotenv import load_dotenv
 
+from telegram import Bot
+
 from telegram.ext import Updater as tgUpdater
 
 from faulthandler import enable as faulthandler_enable
