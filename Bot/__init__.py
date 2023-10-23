@@ -1,6 +1,6 @@
 from os import environ
 
-from telegram.ext.defaults import Defaults
+from telegram import Defaults
 
 from logging import getLogger, FileHandler, StreamHandler, INFO, basicConfig
 
