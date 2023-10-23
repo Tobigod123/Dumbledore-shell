@@ -1,3 +1,3 @@
-from _main_.py . import main
+from _main_ import main
 
 main.main()
