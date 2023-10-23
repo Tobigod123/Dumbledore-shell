@@ -1,5 +1,7 @@
 from os import environ
 
+from telegram.ext.requesthandler import Defaults
+
 from logging import getLogger, FileHandler, StreamHandler, INFO, basicConfig
 
 from dotenv import load_dotenv
@@ -58,8 +60,11 @@ except:
 
     exit(1)
 
-bot = Bot(token='BOT_TOKEN')  # Replace 'YOUR_BOT_TOKEN' with your actual Telegram bot token
-updater = tgUpdater(bot=bot, request_kwargs={'read_timeout': 20, 'connect_timeout': 15})
+bot = Bot(token='BOT_TOKEN') # Replace 'YOUR_BOT_TOKEN' with your actual Telegram bot token
+
+defaults = Defaults(read_timeout=20, connect_timeout=15)
+
+updater = Updater(bot=bot, request_kwards=defaults)
 
 bot = updater.bot
 
